@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link href="{% static 'style.css' %}" rel="stylesheet" />
+    <title>System Dashboard</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top text-center">
+      <a href="/">
+        <img src="images/logo.png" alt="SystemDashboard" width="500" height="150">
+      </a>
+      <br>
+      <br>
+      <form method="GET" class="form-inline my-2 my-lg-5">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </nav>
+  
+  <main class="container" role="main">
+
+      <div class="video panel panel-default">
+
+      <div class="panel-heading" style="background-color:blue">
+        <h2 style="color:yellow" class="panel-title"> <b>System Dashboard Form</b></h2>
+      </div>
+
+    <div class="panel-body" style="background-color:lightblue">
+        <form id="form" name="form" method="POST" action="http://localhost/cgi-bin/fetch.py" >
+            <b>System ID:</b> <input class="form-control mr-sm-2" type="text" placeholder="Enter System ID... " aria-label="Search" name="systemid">
+            <br>
+            <br>
+            <b>Serial Number:</b> <input class="form-control mr-sm-2" type="text" placeholder="Enter Serial Number... " aria-label="Search" name="serialnumber">
+            <br>
+            <br>
+            <b>System Name:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter System Name... " aria-label="Search" name="systemid">
+            <br>
+            <br>
+            <b>DC Name:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter DC Name... " aria-label="Search" name="dcname">
+            <br>
+            <br>
+            <b>System Manufacturer:</b> <input class="form-control mr-sm-2" type="text" placeholder="Enter System Manufacturer... " aria-label="Search" name="systemmanu">
+            <br>
+            <br>
+            <b>System Model:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter System Model... " aria-label="Search" name="systemmodel">
+            <br>
+            <br>
+            <b>System Type:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter System Type... " aria-label="Search" name="systemtype">
+            <br>
+            <br>
+            <b>Installed CPU(s):</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Installed CPU(s)... " aria-label="Search" name="installcpu">
+            <br>
+            <br>
+            <b>CPU Model:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter CPU Model... " aria-label="Search" name="cpumodel">
+            <br>
+            <br>
+            <b>Total Core:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Total Core... " aria-label="Search" name="totalcore">
+            <br>
+            <br>
+            <b>Installed Memory:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Installed Memory... " aria-label="Search" name="installedmemory">
+            <br>
+            <br>
+            <b>Available Physical Memory:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Pysical Memory... " aria-label="Search" name="physicalmemory">
+            <br>
+            <br>
+            <b>System Kernel:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter System Kernel... " aria-label="Search" name="systemkernel">
+            <br>
+            <br>
+            <b>OS Release:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter OS Release... " aria-label="Search" name="osrelease">
+            <br>
+            <br>
+            <b>Domain Name:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Domain Name... " aria-label="Search" name="domainname">
+            <br>
+            <br>
+            <b>EOL:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter End of Life... " aria-label="Search" name="eol">
+            <br>
+            <br>
+            <b>Mapped Storage Device:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Mapped Storage Device... " aria-label="Search" name="storagedevice">
+            <br>
+            <br>
+            <b>System Boot Device:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter System Boot Device... " aria-label="Search" name="systemboot">
+            <br>
+            <br>
+            <b>Configured Physical Network Ports:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Physical Network Ports... " aria-label="Search" name="physnet">
+            <br>
+            <br>
+            <b>Configured Virtual Network Ports:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Virtual Network Ports... " aria-label="Search" name="virnet">
+            <br>
+            <br>
+            <b>IP Details:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter IP Details... " aria-label="Search" name="ip">
+            <br>
+            <br>
+            <b>Gateway:</b><input class="form-control mr-sm-2" type="text" placeholder="Enter Gateway... " aria-label="Search" name="gateway">
+            <br>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+        </form>
+      
+    </div>
+     
+      </div>
+    </main>
+  </body>
+</html>
