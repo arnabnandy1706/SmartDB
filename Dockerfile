@@ -5,4 +5,5 @@ WORKDIR /var/www/html
 RUN mkdir images
 ADD images/learn-blockchain.png images/learn-blockchain.png
 ADD index.html index.html
+USER apache
 CMD ["httpd","-DFOREGROUND"]
