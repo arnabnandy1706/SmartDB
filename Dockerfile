@@ -6,4 +6,5 @@ RUN mkdir images
 ADD images/learn-blockchain.png images/learn-blockchain.png
 ADD index.html index.html
 USER apache
+EXPOSE 80
 CMD ["httpd","-DFOREGROUND"]
